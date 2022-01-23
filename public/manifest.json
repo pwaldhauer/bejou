@@ -1,0 +1,21 @@
+{
+    "name": "bejou",
+    "short_name": "bejou",
+    "theme_color": "#42275a",
+    "background_color": "#42275a",
+    "display": "browser",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "images/icon.png",
+            "sizes": "1024x1024",
+            "type": "image/png"
+        },
+        {
+            "src": "images/icon-small.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ]
+}

@@ -117,7 +117,13 @@ class JournalController extends Controller
     {
         $journal = Journal::whereId($id)->firstOrFail();
 
-        $params = $request->all(['text', 'value', 'date']);
+        $params = $request->all(['text', 'value', 'date', 'delete']);
+
+        if(isset($params['delete'])) {
+            $journal->delete();
+            return redirect('/');
+        }
+
 
         $params['date'] = date('Y-m-d H:i:s', empty($params['date']) ? time() : strtotime($params['date']));
 

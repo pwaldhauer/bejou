@@ -19,6 +19,10 @@
                                    value="@if(!empty($date)){{ date('Y-m-d\T\1\2\:\0\0', strtotime($date))}}@endif"/>
                         @endif
 
+                            @if(!empty($journal))
+                                <input type="submit" value="Löschen" name="delete" />
+                            @endif
+
                     </div>
 
                     <div class="form-row fixed-bottom">
